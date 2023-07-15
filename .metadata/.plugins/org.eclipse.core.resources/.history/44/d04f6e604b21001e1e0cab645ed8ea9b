@@ -1,0 +1,28 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.*;
+
+public class TimeTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Time time1 = new Time(16, 32, 47);
+		Time time2 = new Time(10, 16, 40);
+		
+		System.out.println(time1);
+		System.out.println(time2);
+		
+	}
+	
+	private static Time addTime(Time time1,time2) {
+		int updatehours = 0;
+		int updatemins = 0;
+		int updatesecs = 0;
+		
+		if(time1.)
+	}
+	
+
+}

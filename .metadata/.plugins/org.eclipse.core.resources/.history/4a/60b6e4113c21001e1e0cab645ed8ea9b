@@ -1,0 +1,25 @@
+package com.aurinpro.model;
+
+public class SalesPerson {
+	private int id;
+	private String name;
+	private String city;
+	private int experience;
+	private double salesAmount;
+
+	@Override
+	public String toString() {
+		return "SalesPerson [id=" + id + ", name=" + name + ", city=" + city + ", experience=" + experience
+				+ ", salesAmount=" + salesAmount + "]";
+	}
+
+	public SalesPerson(int id, String name, String city, int experience, double salesAmount) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.experience = experience;
+		this.salesAmount = salesAmount;
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.aurinpro.model;
+
+public enum City {
+
+}

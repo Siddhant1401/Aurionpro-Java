@@ -1,0 +1,10 @@
+package com.aurionpro.model;
+
+public class Time {
+	
+	private int hours;
+	private int minutes;
+	private int seconds;
+	
+	
+}

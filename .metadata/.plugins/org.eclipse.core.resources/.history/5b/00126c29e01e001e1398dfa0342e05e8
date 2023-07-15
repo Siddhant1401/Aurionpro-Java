@@ -1,0 +1,9 @@
+package com.aurionpro.model;
+
+public class Student {
+	public static void main(String[] args) {
+		public int id;
+		public String name;
+		public String emailId;
+	}
+}

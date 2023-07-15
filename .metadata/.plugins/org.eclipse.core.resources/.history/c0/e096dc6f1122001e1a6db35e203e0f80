@@ -1,0 +1,8 @@
+package com.aurionpro.model;
+
+public class Distance {
+	
+	private int feet;
+	private int inch;
+
+}

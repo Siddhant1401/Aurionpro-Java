@@ -1,0 +1,8 @@
+package com.aurionpro.test2;
+import com.aurionpro.model;
+
+public class Student {
+	
+}
+
+

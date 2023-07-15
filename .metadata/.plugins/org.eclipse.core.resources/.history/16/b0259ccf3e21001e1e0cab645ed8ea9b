@@ -1,0 +1,49 @@
+package com.aurionpro.test;
+
+import com.aurinpro.model.*;
+
+public class SalesPersonTest {
+
+	public static void main(String[] args) {
+
+		// TODO Auto-generated method stub
+
+		SalesPerson[] persons = { new SalesPerson(1, "Ramesh", City.MUMBAI, 1, 100),
+				new SalesPerson(2, "Suresh", City.PUNE, 2, 200), new SalesPerson(3, "Mahes", City.NAGPUR, 3, 400),
+				new SalesPerson(4, "Jayesh", City.MUMBAI, 5, 350), new SalesPerson(5, "Rajesh", City.PUNE, 6, 79),
+				new SalesPerson(6, "Ganesh", City.NAGPUR, 8, 1000), };
+
+		for (SalesPerson acc : persons) {
+			System.out.println(acc);
+		}
+
+		SalesPerson highestSalesPerson = findHighestSalesPerson(persons);
+		System.out.println("Salesman with Highest Sales : " + highestSalesPerson);
+
+		double sumofSalesAmount = findSumOfAllSalesAmount(persons);
+		System.out.println("Total Sales of All Salesman : " + sumofSalesAmount);
+		
+		double sumofSalesByMumbai = findSumofSalesByMumbai(persons);
+		System.out.println("Total Sales in Mumbai City");
+	}
+
+	private static double findSumOfAllSalesAmount(SalesPerson[] persons) {
+		double sum = 0;
+		for (int i = 0; i < persons.length; i++) {
+			sum += persons[i].getSalesAmount();
+		}
+		return sum;
+	}
+
+	private static SalesPerson findHighestSalesPerson(SalesPerson[] persons) {
+		SalesPerson maxSales = persons[0];
+
+		for (int i = 0; i < persons.length; i++) {
+			if (persons[i].getSalesAmount() > maxSales.getSalesAmount()) {
+				maxSales = persons[i];
+			}
+		}
+		return maxSales;
+	}
+
+}

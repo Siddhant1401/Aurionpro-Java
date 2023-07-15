@@ -1,0 +1,17 @@
+package com.aurionpro.model;
+
+public class Distance {
+	
+	private int inches;
+	private int feet;
+	
+	public Distance(int inches, int feet) {
+		super();
+		this.inches = inches;
+		this.feet = feet;
+	} 
+	
+	
+	
+	
+}

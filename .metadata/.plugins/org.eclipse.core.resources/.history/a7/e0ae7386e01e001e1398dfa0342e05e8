@@ -1,0 +1,10 @@
+package com.aurionpro.test2;
+import com.aurionpro.model.*;
+
+public class StudentTest {
+	public static void main(String[] args) {
+		Student student = new Student();
+		
+	}
+
+}
