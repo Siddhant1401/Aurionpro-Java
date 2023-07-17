@@ -1,7 +1,0 @@
-package com.aurionpro.model;
-
-public class Rectamgle {
-	public int height;
-	public int 
-
-}

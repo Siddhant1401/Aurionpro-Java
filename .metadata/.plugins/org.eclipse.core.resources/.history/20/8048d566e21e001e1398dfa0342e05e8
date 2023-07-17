@@ -1,8 +1,0 @@
-package com.aurionpro.model;
-
-public class Rectamgle {
-	public double height;
-	public double width;
-	public double calculateArea();
-
-}

@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="com.aurionpro.model.Rectangle"/>
 <fullyQualifiedTypeName name="com.aurionpro.test.AccountTest"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.AccountType"/>
-<fullyQualifiedTypeName name="com.aurionpro.model.Account"/>
 <fullyQualifiedTypeName name="com.aurinpro.model.City"/>
 <fullyQualifiedTypeName name="com.aurinpro.model.SalesPerson"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Time"/>
@@ -16,7 +15,6 @@
 <fullyQualifiedTypeName name="com.aurionpro.model.Child"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Parent"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Distance"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Infant"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Man"/>
 <fullyQualifiedTypeName name="com.aurionpro.model.Boy"/>
@@ -28,4 +26,11 @@
 <fullyQualifiedTypeName name="com.aurionpro.model.Game"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.CurrentAccount"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.SavingAccount"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="com.aurionpro.model.Account"/>
 </qualifiedTypeNameHistroy>
