@@ -1,9 +1,0 @@
-package com.aurionpro.model;
-
-public class Child extends Parent{
-
-	public Child(int value) {
-		super(value);
-		// TODO Auto-generated constructor stub
-	}	
-}
