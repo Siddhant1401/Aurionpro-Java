@@ -8,10 +8,17 @@ public class EmployeeTest {
 
 			EmployeeManager emp = new EmployeeManager();
 			emp.employeeObj();
+		//emp.getAllEmployees();
+		// emp.getAllEmployeeFromDeptartment();
+		// emp.getEmployeeManager();
+		// emp.addNewEmployee();
+		// emp.countOfEmployeeInEachDept();
+		// emp.highestCommissionSalesMan();
+		// emp.highestPaid();
+		// emp.highestPaidForEachDept();
+		// emp.highestPaidForEachRole();
+			emp.sumOfAllEmployeeSalaries();
 			
-//			emp.getAllEmployees();
-			
-			emp.getAllEmployeeFromDeptartment();
 	}
 
 }
