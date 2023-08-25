@@ -1,6 +1,7 @@
 package com.aurionpro.model;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 
 public class Employee implements Serializable {
 
@@ -10,22 +11,26 @@ public class Employee implements Serializable {
 	private String empName;
 	private String empRole;
 	private int roleId;
-	private String joinDate;
+	private LocalDate joinDate;
 	private double salary;
 	private double commission;
 	private int deptId;
 
-	public Employee(int empId, String empName, String empRole, int roleId, String joinDate, double salary,
-			double commission, int deptId) {
+	public Employee(int empId, String empName, String empRole, int roleId, double salary, double commission,
+			int deptId) {
 		super();
 		this.empId = empId;
 		this.empName = empName;
 		this.empRole = empRole;
 		this.roleId = roleId;
-		this.joinDate = joinDate;
+		// this.joinDate = joinDate;
 		this.salary = salary;
 		this.commission = commission;
 		this.deptId = deptId;
+	}
+
+	public Employee() {
+
 	}
 
 	public int getEmpId() {
@@ -60,11 +65,11 @@ public class Employee implements Serializable {
 		this.roleId = roleId;
 	}
 
-	public String getJoinDate() {
+	public LocalDate getjoinDate() {
 		return joinDate;
 	}
 
-	public void setJoinDate(String joinDate) {
+	public void setjoinDate(LocalDate joinDate) {
 		this.joinDate = joinDate;
 	}
 
@@ -96,9 +101,47 @@ public class Employee implements Serializable {
 		return serVersionUID;
 	}
 
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + empId;
+		result = prime * result + ((empName == null) ? 0 : empName.hashCode());
+		result = prime * result + ((empRole == null) ? 0 : empRole.hashCode());
+		result = prime * result + roleId;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Employee other = (Employee) obj;
+		if (empId != other.empId)
+			return false;
+		if (empName == null) {
+			if (other.empName != null)
+				return false;
+		} else if (!empName.equals(other.empName))
+			return false;
+		if (empRole == null) {
+			if (other.empRole != null)
+				return false;
+		} else if (!empRole.equals(other.empRole))
+			return false;
+		if (roleId != other.roleId)
+			return false;
+		return true;
+	}
+
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", empName=" + empName + ", empRole=" + empRole + ", roleId=" + roleId
+		return "\n Employee [empId=" + empId + ", empName=" + empName + ", empRole=" + empRole + ", roleId=" + roleId
 				+ ", joinDate=" + joinDate + ", salary=" + salary + ", commission=" + commission + ", deptId=" + deptId
 				+ "]" + "\n";
 	}
